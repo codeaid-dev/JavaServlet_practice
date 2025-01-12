@@ -22,7 +22,7 @@ public class Ex3 extends HttpServlet {
     LocalDateTime today = LocalDateTime.now();
     String result = today.format(dtf);
     out.println("<h2>実習3</h2>");
-    out.println("<p>今日の日付：" + result + "</p>");
+    out.println("<p>今日の日付(年月日)：" + result + "</p>");
   }
 
 }
