@@ -1,3 +1,5 @@
 INDEX VERSION 1.134
 /Users/cockle/Documents/JavaServlet_practice/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3421194619.index
 /chapter3-5/src/main/java
+/Users/birdy/Documents/JavaServlet_practice/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3421194619.index
+/chapter3-5/src/main/java
