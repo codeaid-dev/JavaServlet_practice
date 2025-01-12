@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servers>
-  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat10_Java21-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat10_Java21" name="Tomcat10_Java21" runtime-id="Tomcat10 (Java21)" server-type="org.eclipse.jst.server.tomcat.101" server-type-id="org.eclipse.jst.server.tomcat.101" start-timeout="60" stop-timeout="15" testEnvironment="true" timestamp="1">
-    <list key="modules" value0="chapter3-5::org.eclipse.jst.jee.server:chapter3-5::jst.web::6.0"/>
-  </server>
-</servers>
