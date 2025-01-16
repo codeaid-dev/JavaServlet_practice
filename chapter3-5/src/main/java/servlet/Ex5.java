@@ -16,6 +16,15 @@ public class Ex5 extends HttpServlet {
   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     response.setContentType("text/html; charset=UTF-8");
     PrintWriter out = response.getWriter();
+    out.println("""
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <meta charset="UTF-8">
+        <title>実習5</title>
+        </head>
+        <body>
+        """);
     out.println("<h2>実習5</h2>");
     int uranai = (int) (Math.random() * 10);
     if (uranai == 0) {
@@ -27,6 +36,10 @@ public class Ex5 extends HttpServlet {
     } else {
       out.println("<p>今日は最悪</p>");
     }
+    out.println("""
+        </body>
+        </html>
+        """);
   }
 
 }

@@ -21,8 +21,21 @@ public class Ex3 extends HttpServlet {
     DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy年MM月dd日");
     LocalDateTime today = LocalDateTime.now();
     String result = today.format(dtf);
+    out.println("""
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <meta charset="UTF-8">
+        <title>実習3</title>
+        </head>
+        <body>
+        """);
     out.println("<h2>実習3</h2>");
     out.println("<p>今日の日付(年月日)：" + result + "</p>");
+    out.println("""
+        </body>
+        </html>
+        """);
   }
 
 }

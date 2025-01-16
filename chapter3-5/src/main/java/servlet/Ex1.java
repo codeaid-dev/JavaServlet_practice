@@ -17,8 +17,21 @@ public class Ex1 extends HttpServlet {
     response.setContentType("text/html; charset=UTF-8");
     PrintWriter out = response.getWriter();
     String name = request.getParameter("name");
+    out.println("""
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <meta charset="UTF-8">
+        <title>実習1</title>
+        </head>
+        <body>
+        """);
     out.println("<h2>実習1</h2>");
     out.println("<p>名前：" + (name != null ? name : "名無し") + "</p>");
+    out.println("""
+        </body>
+        </html>
+        """);
   }
 
 }
