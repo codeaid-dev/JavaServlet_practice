@@ -9,33 +9,33 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-@WebServlet("/ex9")
-public class Ex9 extends HttpServlet {
+@WebServlet("/ex10")
+public class Ex10 extends HttpServlet {
   private static final long serialVersionUID = 1L;
 
   protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     response.setContentType("text/html; charset=UTF-8");
     PrintWriter out = response.getWriter();
-    String result = "趣味:";
-    String[] hobbies = request.getParameterValues("hobby");
-    if (hobbies != null) {
-      for (String hobby : hobbies) {
-        result += " " + hobby;
-      }
-    } else {
-      result = "趣味が選択されていません。";
+    String station = request.getParameter("station");
+    String type = "";
+    if (station.equals("A") || station.equals("C") || station.equals("D")) {
+      type = "快速";
+    } else if (station.equals("B")) {
+      type = "快速・急行";
+    } else if (station.equals("E")) {
+      type = "快速・急行・特急";
     }
     out.println("""
         <!DOCTYPE html>
         <html>
         <head>
         <meta charset="UTF-8">
-        <title>実習9</title>
+        <title>実習10</title>
         </head>
         <body>
-          <h2>実習9</h2>
+          <h2>実習10</h2>
           """);
-    out.println(result);
+    out.println("<p>" + station + "駅には" + type + "の電車が止まります。</p>");
     out.println("""
         </body>
         </html>
