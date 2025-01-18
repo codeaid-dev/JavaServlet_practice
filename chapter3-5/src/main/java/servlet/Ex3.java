@@ -2,7 +2,7 @@ package servlet;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 import jakarta.servlet.ServletException;
@@ -19,7 +19,7 @@ public class Ex3 extends HttpServlet {
     response.setContentType("text/html; charset=UTF-8");
     PrintWriter out = response.getWriter();
     DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy年MM月dd日");
-    LocalDateTime today = LocalDateTime.now();
+    LocalDate today = LocalDate.now();
     String result = today.format(dtf);
     out.println("""
         <!DOCTYPE html>
