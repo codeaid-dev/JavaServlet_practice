@@ -39,6 +39,7 @@ public class Ex17 extends HttpServlet {
     response.setContentType("text/html; charset=UTF-8");
     PrintWriter out = response.getWriter();
     String password = request.getParameter("password");
+    password = password != null && password.length() != 0 ? password : "";
     out.println("""
         <!DOCTYPE html>
         <html>
@@ -50,20 +51,17 @@ public class Ex17 extends HttpServlet {
           <h2>実習17</h2>
           <form action="ex17" method="post">
             <label>パスワード:<br>
-            <input type="text" name="password" value="
+            <input type="text" name="password"
             """);
-    out.print(password != null && password.length() != 0 ? password : "");
-    out.println("\"></label><br>");
+    out.println("value=\"" + password + "\"></label><br>");
     out.println("""
           <p><button type="submit">登録</button></p>
         </form>
         """);
-    if (password != null && password.length() != 0) {
-      if (password.matches("(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!-/:-@\\[-`{-~])[!-~]{8,32}")) {
-        out.println("<p>登録可能です。</p>");
-      } else {
-        out.println("<p>8文字以上32文字以下で英大小文字、数字、記号を1文字以上含んでください。</p>");
-      }
+    if (password.matches("(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!-/:-@\\[-`{-~])[!-~]{8,32}")) {
+      out.println("<p>登録可能です。</p>");
+    } else {
+      out.println("<p>8文字以上32文字以下で英大小文字、数字、記号を1文字以上含んでください。</p>");
     }
     out.println("""
         </body>
