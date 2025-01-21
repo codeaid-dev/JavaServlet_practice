@@ -37,6 +37,22 @@ public class Ex18 extends HttpServlet {
           <p><button type="submit">登録</button></p>
         </form>
         """);
+    if (mail.matches("^[\\w\\-.]+@[\\w\\-.]+\\.[a-zA-Z]+{2,}$")) {
+      boolean err = false;
+      for (String m : registered) {
+        if (m.equals(mail)) {
+          err = true;
+          break;
+        }
+      }
+      if (!err) {
+        out.println("<p>登録可能です。</p>");
+      } else {
+        out.println("<p>すでに登録されています。</p>");
+      }
+    } else {
+      out.println("<p>登録できません。</p>");
+    }
     out.println("""
         </body>
         </html>
