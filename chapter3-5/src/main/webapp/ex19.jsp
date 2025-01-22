@@ -37,17 +37,18 @@ int[] last = {19,18,20,19,20,21,22,22,22,23,22,21};
     <p><button type="submit">送信</button></p>
   </form>
   <%
+  String msg = "";
   if (request.getMethod().equals("POST")) {
-    List<integer> sm = new ArrayList<>(List.of(4,6,9,11));
+    List<Integer> sm = new ArrayList<>(List.of(4,6,9,11));
     if (month == 2 && date >= 29) {
         date = 29;
-    } else if (sm.contain(month) && day >= 31) {
+    } else if (sm.contains(month) && date >= 31) {
         date = 30;
     }
     if (last[month-1] >= date) {
-        String msg = month+"月"+day+"日は"+seiza[month-1]+"です";
+        msg = month+"月"+date+"日は"+seiza[month-1]+"です";
     } else {
-        String msg = month+"月"+day+"日は"+seiza[month%12]+"です";
+        msg = month+"月"+date+"日は"+seiza[month%12]+"です";
     }
   }
   %>

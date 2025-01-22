@@ -39,7 +39,7 @@ public class Ex17 extends HttpServlet {
     response.setContentType("text/html; charset=UTF-8");
     PrintWriter out = response.getWriter();
     String password = request.getParameter("password");
-    password = password != null && password.length() != 0 ? password : "";
+    password = password != null ? password : "";
     out.println("""
         <!DOCTYPE html>
         <html>

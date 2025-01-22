@@ -18,7 +18,7 @@ public class Ex18 extends HttpServlet {
     PrintWriter out = response.getWriter();
     String[] registered = { "hoge@sample.com", "foo@sample.com" };
     String mail = request.getParameter("mail");
-    mail = mail != null && mail.length() != 0 ? mail : "";
+    mail = mail != null ? mail : "";
     out.println("""
         <!DOCTYPE html>
         <html>
