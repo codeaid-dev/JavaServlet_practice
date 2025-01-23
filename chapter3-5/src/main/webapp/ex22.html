@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>実習22</title>
+</head>
+<body>
+  <h2>実習22</h2>
+  <form action="ex22" method="post">
+    <label>表示するテキスト:<br>
+    <input type="text" name="moji" required></label><br>
+    <label>文字サイズ:<br>
+    <input type="number" name="size" min="1" required></label><br>
+    文字の色:<br>
+    <label><input type="radio" name="color" value="black" checked>黒色</label>
+    <label><input type="radio" name="color" value="red">赤色</label>
+    <label><input type="radio" name="color" value="blue">青色</label>
+    <label><input type="radio" name="color" value="yellow">黄色</label><br>
+    オブション:<br>
+    <label><input type="checkbox" name="bold" value="bold">太くする</label><br>
+    <label>全体表示数:<br>
+    <input type="number" name="total" min="1" required></label><br>
+    <label>1行表示数:<br>
+    <input type="number" name="line" min="1" required></label><br>
+    <p><button type="submit">表示</button></p>
+  </form>
+</body>
+</html>
