@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>実習23</title>
+</head>
+<body>
+  <h2>実習23:プール利用料金</h2>
+  <h3>基本使用料（2時間）500円</h3>
+  <form action="ex23" method="post">
+    <label><input type="checkbox" name="option" value="goggles">ゴーグル（200円）</label><br>
+    <label><input type="checkbox" name="option" value="swimcap">スイムキャップ（100円）</label><br>
+    <label><input type="checkbox" name="option" value="towel">タオル（300円）</label><br>
+    <label><input type="checkbox" name="option" value="swimwear">水着（400円）</label><br>
+    <input type="hidden" name="basePrice" value="500">
+    <input type="hidden" name="gPrice" value="200">
+    <input type="hidden" name="cPrice" value="100">
+    <input type="hidden" name="tPrice" value="300">
+    <input type="hidden" name="wPrice" value="400">
+    <p><button type="submit">送信</button></p>
+  </form>
+</body>
+</html>
