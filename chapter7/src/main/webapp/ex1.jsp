@@ -8,7 +8,7 @@
 </head>
 <body>
   <h2>実習1</h2>
-  <p>ユーザー名: ${ username }</p>
-  <p>年齢: ${ age }</p>
+  <p>ユーザー名: <%= request.getAttribute("username") %></p>
+  <p>年齢: <%= request.getAttribute("age") %></p>
 </body>
 </html>
