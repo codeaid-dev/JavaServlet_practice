@@ -20,8 +20,8 @@ public class Ex16 extends HttpServlet {
     PrintWriter out = response.getWriter();
     String strYear = request.getParameter("year");
     String strMonth = request.getParameter("month");
-    strYear = (strYear != null && strYear.length() != 0) ? strYear : "2020";
-    strMonth = (strMonth != null && strMonth.length() != 0) ? strMonth : "1";
+    strYear = (strYear != null) ? strYear : "2020";
+    strMonth = (strMonth != null) ? strMonth : "1";
     int year = Integer.parseInt(strYear);
     int month = Integer.parseInt(strMonth);
     // 指定した年月の最初の日と最後の日を取得
