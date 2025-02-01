@@ -10,11 +10,12 @@
 <body>
   <h2>実習1</h2>
   <%
-    HttpSession sessionObj = request.getSession();
-    String user = (String) sessionObj.getAttribute("user");
+//    HttpSession sessionObj = request.getSession();
+//    String user = (String) sessionObj.getAttribute("user");
+    String user = (String) session.getAttribute("user"); //sessionは暗黙オブジェクト
     if (user == null) {
-        response.sendRedirect("ex1.html");
-        return;
+      response.sendRedirect("ex1.html");
+      return;
     }
   %>
   <p>ログイン完了画面</p>
