@@ -17,6 +17,7 @@
         return;
     }
   %>
+  <p>ログイン完了画面</p>
   <p>ようこそ、<%= user %> さん！</p>
   <a href="ex2logout">ログアウト</a>
 </body>

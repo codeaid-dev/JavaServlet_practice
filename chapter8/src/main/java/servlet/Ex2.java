@@ -31,6 +31,7 @@ public class Ex2 extends HttpServlet {
         </head>
         <body>
         <h2>実習2</h2>
+        <p>ログイン画面</p>
         <form action="ex2welcome" method="post">
           <label>ユーザー: <input type="text" name="user" required></label><br>
           <label>パスワード: <input type="password" name="password" required></label>
