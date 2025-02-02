@@ -15,8 +15,8 @@ public class Ex2 extends HttpServlet {
   private static final long serialVersionUID = 1L;
 
   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    HttpSession sessionObj = request.getSession(false);
-    if (sessionObj != null && sessionObj.getAttribute("user") != null) {
+    HttpSession session = request.getSession(false);
+    if (session != null && session.getAttribute("user") != null) {
       response.sendRedirect("ex2welcome");
       return;
     }

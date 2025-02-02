@@ -12,12 +12,12 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 
-@WebServlet("/ex3cart")
-public class Ex3Cart extends HttpServlet {
+@WebServlet("/ex4cart")
+public class Ex4Cart extends HttpServlet {
   private static final long serialVersionUID = 1L;
 
   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/ex3Cart.jsp");
+    RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/ex4Cart.jsp");
     dispatcher.forward(request, response);
   }
 
@@ -38,7 +38,7 @@ public class Ex3Cart extends HttpServlet {
     session.setMaxInactiveInterval(60);
     // セッションにカートを保存
     session.setAttribute("cart", cart);
-    RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/ex3Cart.jsp");
+    RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/ex4Cart.jsp");
     dispatcher.forward(request, response);
   }
 
