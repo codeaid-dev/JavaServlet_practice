@@ -19,14 +19,14 @@ public class Ex1 extends HttpServlet {
   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     response.setContentType("text/html; charset=UTF-8");
     PrintWriter out = response.getWriter();
-    ServletContext context = getServletContext();
-    List<String> visitors = (List<String>) context.getAttribute("visitors");
+    ServletContext application = getServletContext();
+    List<String> visitors = (List<String>) application.getAttribute("visitors");
     if (visitors == null) {
       visitors = new ArrayList<>();
     }
     String ip = request.getRemoteAddr();
     visitors.add(ip);
-    context.setAttribute("visitors", visitors);
+    application.setAttribute("visitors", visitors);
     out.println("""
         <!DOCTYPE html>
         <html>
