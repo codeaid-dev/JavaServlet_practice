@@ -10,10 +10,8 @@ List<Product> productList = (List<Product>)request.getAttribute("products");
 <meta charset="UTF-8">
 <title>実習7</title>
 <style>
-table, th, td {
-  border-collapse: collapse;
-  border: 1px solid;
-}
+  table { border: 2px solid rgb(140 140 140); }
+  th,td { border: 1px solid rgb(160 160 160); }
 </style>
 </head>
 <body>
