@@ -31,7 +31,7 @@ List<Product> cart = (List<Product>)session.getAttribute("cart");
       <%= product.getName() %>（<%= product.getPrice() %>円） x <%= product.getQuantity() %>個<br>
       <% total += product.getPrice() * product.getQuantity();
     } %>
-    合計：<%= total %>円(税込)<br>
+    合計：<%= (int)(total*1.1) %>円(税込)<br>
     <form method="post">
       <button type="submit" name="del_from_cart">カートを空にする</button>
     </form>

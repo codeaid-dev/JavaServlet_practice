@@ -38,6 +38,9 @@ public class Ex8 extends HttpServlet {
 
     if (cart == null) {
       cart = new ArrayList<>();
+      for (Product product : products) {
+        product.setQuantity(0);
+      }
     }
 
     if (request.getParameter("add_to_cart") != null) {
@@ -66,9 +69,6 @@ public class Ex8 extends HttpServlet {
         session.setAttribute("cart", cart);
       }
     } else if (request.getParameter("del_from_cart") != null) {
-      for (Product product : products) {
-        product.setQuantity(0);
-      }
       session.removeAttribute("cart");
     }
 
