@@ -5,15 +5,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習2</title>
+<title>割り勘計算</title>
 <style>
   table { border: 2px solid rgb(140 140 140); }
   th,td { border: 1px solid rgb(160 160 160); }
 </style>
 </head>
 <body>
-  <h2>実習2</h2>
-  <h3>割り勘計算</h3>
+  <h2>割り勘計算</h2>
   <form method="post">
     <p>
     <label>支払総額：<input type="number" name="total" min="200" required>円</label><br>

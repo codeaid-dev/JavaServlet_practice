@@ -4,14 +4,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習7</title>
+<title>簡易タイピング練習</title>
 <style>
 .text { font-size: 20px; }
 </style>
 </head>
 <body>
-  <h2>実習7</h2>
-  <h3>💻 簡易タイピング練習 💻️</h3>
+  <h2>💻 簡易タイピング練習 💻️</h2>
   <p>${select.number}回目</p>
   <p class="text">${select.text}</p>
   <form method="post">

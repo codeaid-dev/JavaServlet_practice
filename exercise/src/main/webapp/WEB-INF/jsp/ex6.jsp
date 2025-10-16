@@ -9,11 +9,10 @@ List<Character> correct = (List<Character>)application.getAttribute("correct");
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習6</title>
+<title>アルファベットクイズ</title>
 </head>
 <body>
-  <h2>実習6</h2>
-  <h3>❓ アルファベットクイズ ❓</h3>
+  <h2>❓ アルファベットクイズ ❓</h2>
   <p>抜けているアルファベットはどれ？(<%= correct.size() %>文字抜けている)</p>
   <p style="font-size:20px;"><%= question.toString() %></p>
   <form method="post">

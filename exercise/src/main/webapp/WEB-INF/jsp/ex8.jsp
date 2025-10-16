@@ -9,11 +9,10 @@ List<Product> cart = (List<Product>)session.getAttribute("cart");
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習8</title>
+<title>商品一覧</title>
 </head>
 <body>
-  <h2>実習8</h2>
-  <h3>商品一覧</h3>
+  <h2>商品一覧</h2>
   <form method="post">
   <% for (Product product : products) { %>
     <label>

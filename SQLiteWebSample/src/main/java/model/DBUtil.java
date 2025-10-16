@@ -1,5 +1,6 @@
 package model;
 
+import java.io.File;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -8,6 +9,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+
+import jakarta.servlet.ServletContext;
 
 public class DBUtil {
   private static String DB_PATH = null;
@@ -21,12 +24,24 @@ public class DBUtil {
     }
   }
 
-  // 初期化(プロジェクト直下のファイルパスを作成)
-  public static void init(String realPath) {
-    java.io.File file = new java.io.File(realPath);
-    file.getParentFile().mkdirs();
-    DB_PATH = "jdbc:sqlite:" + file.getAbsolutePath();
-    System.out.println("DB Path: " + DB_PATH);
+  // 初期化
+  public static void init(ServletContext context) {
+    try {
+      // 本番環境
+      String dirPath = context.getRealPath("/WEB-INF/db");
+      File dir = new File(dirPath);
+      if (!dir.exists()) {
+        dir.mkdirs(); // dbフォルダを作成
+        System.out.println("Created directory: " + dir.getAbsolutePath());
+      }
+
+      File dbFile = new File(dir, "sample.db");
+      DB_PATH = "jdbc:sqlite:" + dbFile.getAbsolutePath();
+      System.out.println("DB Path = " + DB_PATH);
+
+    } catch (Exception e) {
+      e.printStackTrace();
+    }
   }
 
   // 接続を取得

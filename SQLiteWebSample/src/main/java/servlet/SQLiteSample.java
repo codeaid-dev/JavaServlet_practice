@@ -21,8 +21,7 @@ public class SQLiteSample extends HttpServlet {
     PrintWriter out = response.getWriter();
 
     ServletContext context = getServletContext();
-    String realPath = context.getRealPath("/WEB-INF/db/sample.db");
-    DBUtil.init(realPath);
+    DBUtil.init(context);
 
     DBUtil.createTable();
     DBUtil.insertData();

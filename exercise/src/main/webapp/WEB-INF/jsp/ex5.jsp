@@ -19,11 +19,10 @@ if (zipdata != null) {
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習5</title>
+<title>大阪府 - 郵便番号検索</title>
 </head>
 <body>
-  <h2>実習5</h2>
-  <h3>大阪府 - 郵便番号検索</h3>
+  <h2>大阪府 - 郵便番号検索</h2>
   <form method="POST">
     <p><label>郵便番号：<input type="text" name="zip1" size="3" value=<%= zip1 %>> - 
     <input type="text" name="zip2" size="4" value=<%= zip2 %>></label>

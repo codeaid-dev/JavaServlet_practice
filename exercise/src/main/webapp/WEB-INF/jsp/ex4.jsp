@@ -5,11 +5,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習4</title>
+<title>じゃんけん</title>
 </head>
 <body>
-  <h2>実習4</h2>
-  <p>✊ じゃんけん5回戦 ✊</p>
+  <h2>✊ じゃんけん5回戦 ✊</h2>
   <form method="post">
     <p>
       <label style="margin-right: 10px;"><input type="radio" name="you" value="ぐー" checked>✊</label>

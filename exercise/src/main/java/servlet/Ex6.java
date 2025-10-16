@@ -25,11 +25,10 @@ public class Ex6 extends HttpServlet {
         <html>
         <head>
         <meta charset="UTF-8">
-        <title>実習6</title>
+        <title>アルファベットクイズ</title>
         </head>
         <body>
-        <h2>実習6</h2>
-        <h3>❓ アルファベットクイズ ❓</h3>
+        <h2>❓ アルファベットクイズ ❓</h2>
         <form method="POST">
           <p>隠すアルファベットの数：</p>
           <p><label><input type="radio" name="chars" value=1 checked>1文字</label>

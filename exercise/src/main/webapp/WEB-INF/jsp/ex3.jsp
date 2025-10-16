@@ -4,11 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習3</title>
+<title>パスワード生成</title>
 </head>
 <body>
-  <h2>実習3</h2>
-  <h3>パスワード生成</h3>
+  <h2>パスワード生成</h2>
   <p>文字数は8~32の整数を入力してください。</p>
   <form method="post">
     <label>文字数: <input type="number" name="count" min="8" max="32" required></label>
