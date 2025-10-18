@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>社内掲示板</title>
+<title>簡易掲示板</title>
 </head>
 <body>
-  <h2>📋 社内掲示板</h2>
+  <h2>📋 簡易掲示板</h2>
 
   <form action="add" method="post">
     名前：<input type="text" name="name" required><br>

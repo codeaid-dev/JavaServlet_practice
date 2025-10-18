@@ -8,7 +8,7 @@ import jakarta.servlet.annotation.WebListener;
 import model.DBUtil;
 
 @WebListener
-public class AppInitListener implements ServletContextListener {
+public class BbsInitListener implements ServletContextListener {
 
   public void contextInitialized(ServletContextEvent sce) {
     ServletContext context = sce.getServletContext();
