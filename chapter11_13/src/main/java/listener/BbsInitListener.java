@@ -5,14 +5,14 @@ import jakarta.servlet.ServletContextEvent;
 import jakarta.servlet.ServletContextListener;
 import jakarta.servlet.annotation.WebListener;
 
-import model.DBUtil;
+import model.BbsDBUtil;
 
 @WebListener
 public class BbsInitListener implements ServletContextListener {
 
   public void contextInitialized(ServletContextEvent sce) {
     ServletContext context = sce.getServletContext();
-    DBUtil.init(context);
+    BbsDBUtil.init(context);
     System.out.println("[AppInitListener] start Web application - start init.");
   }
 

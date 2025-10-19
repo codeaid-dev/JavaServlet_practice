@@ -8,7 +8,7 @@ import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
-import model.DBUtil;
+import model.BbsDBUtil;
 
 @WebServlet("/add")
 public class BbsAdd extends HttpServlet {
@@ -19,7 +19,7 @@ public class BbsAdd extends HttpServlet {
     String name = request.getParameter("name");
     String message = request.getParameter("message");
 
-    DBUtil.insertPost(name, message);
+    BbsDBUtil.insertPost(name, message);
 
     response.sendRedirect("bbs");
   }

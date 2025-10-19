@@ -10,7 +10,7 @@ import java.sql.Statement;
 
 import jakarta.servlet.ServletContext;
 
-public class DBUtil {
+public class BbsDBUtil {
   private static String DB_PATH = null;
 
   static {
