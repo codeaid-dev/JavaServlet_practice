@@ -4,23 +4,23 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習1</title>
+<title>次の日はいつ？</title>
 </head>
 <body>
-  <h2>実習1</h2>
-  <h3>あなたのBMI値</h3>
-  <form action="ex1" method="post">
-    <label>身長(cm): <input type="number" step="0.01" name="height" required></label><br>
-    <label>体重(kg): <input type="number" step="0.01" name="weight" required></label><br>
-    <p><button type="submit">測定</button></p>
-  </form>
+  <h2>次の日はいつ？</h2>
+<form method="POST">
+  <p><label>年月日：<input type="date" name="date" required></label></p>
+  <button type="submit">表示</button>
+</form>
   <%
   String result = (String)request.getAttribute("result");
   if (result != null) {
     %>
     <p><%= result %></p>
     <%
-  }
+  } else {
   %>
+  <p>ここに表示</p>
+  <% } %>
 </body>
 </html>
