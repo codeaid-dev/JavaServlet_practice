@@ -21,23 +21,37 @@ public class Ex9 extends HttpServlet {
       String operator1 = request.getParameter("operator1");
       String operator2 = request.getParameter("operator2");
       int result = 0;
-      if (operator1.equals("+")) {
-        result = num1 + num2;
-      } else if (operator1.equals("-")) {
-        result = num1 - num2;
-      } else if (operator1.equals("*")) {
-        result = num1 * num2;
-      } else if (operator1.equals("/")) {
-        result = num1 / num2;
-      }
-      if (operator2.equals("+")) {
-        result += num3;
-      } else if (operator2.equals("-")) {
-        result -= num3;
-      } else if (operator2.equals("*")) {
-        result *= num3;
-      } else if (operator2.equals("/")) {
-        result /= num3;
+      if ((operator2.equals("*") || operator2.equals("/"))
+          && (operator1.equals("+") || operator1.equals("-"))) {
+        if (operator2.equals("*")) {
+          result = num2 * num3;
+        } else if (operator2.equals("/")) {
+          result = num2 / num3;
+        }
+        if (operator1.equals("+")) {
+          result = num1 + result;
+        } else if (operator1.equals("-")) {
+          result = num1 - result;
+        }
+      } else {
+        if (operator1.equals("+")) {
+          result = num1 + num2;
+        } else if (operator1.equals("-")) {
+          result = num1 - num2;
+        } else if (operator1.equals("*")) {
+          result = num1 * num2;
+        } else if (operator1.equals("/")) {
+          result = num1 / num2;
+        }
+        if (operator2.equals("+")) {
+          result += num3;
+        } else if (operator2.equals("-")) {
+          result -= num3;
+        } else if (operator2.equals("*")) {
+          result *= num3;
+        } else if (operator2.equals("/")) {
+          result /= num3;
+        }
       }
 
       String strResult = num1 + operator1 + num2 + operator2 + num3 + "=" + result;

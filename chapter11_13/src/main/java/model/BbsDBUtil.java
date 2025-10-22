@@ -22,10 +22,10 @@ public class BbsDBUtil {
   }
 
   // ----------------------------------------
-  // ① 初期処理（DBファイル存在チェック＋テーブル作成）
+  // 初期処理（DBファイル存在チェック＋テーブル作成）
   // ----------------------------------------
   public static void init(ServletContext context) {
-    System.out.println("[DBUtil] start init...");
+    System.out.println("[BbsDBUtil] start init...");
 
     try {
       // 本番環境
@@ -33,23 +33,23 @@ public class BbsDBUtil {
       File dir = new File(dirPath);
       if (!dir.exists()) {
         dir.mkdirs(); // dbフォルダを作成
-        System.out.println("[DBUtil] Created directory: " + dir.getAbsolutePath());
+        System.out.println("[BbsDBUtil] Created directory: " + dir.getAbsolutePath());
       }
 
       File dbFile = new File(dir, "bbs.db");
       DB_PATH = "jdbc:sqlite:" + dbFile.getAbsolutePath();
-      System.out.println("DB Path = " + DB_PATH);
+      System.out.println("[BbsDBUtil] DB Path = " + DB_PATH);
 
     } catch (Exception e) {
       e.printStackTrace();
     }
 
     createTable(); // テーブル作成
-    System.out.println("[DBUtil] finish initialize");
+    System.out.println("[BbsDBUtil] finish initialize");
   }
 
   // ----------------------------------------
-  // ② テーブル作成
+  // テーブル作成
   // ----------------------------------------
   public static void createTable() {
     String sql = """
@@ -71,14 +71,14 @@ public class BbsDBUtil {
   }
 
   // ----------------------------------------
-  // ③ コネクション取得
+  // コネクション取得
   // ----------------------------------------
   public static Connection getConnection() throws SQLException {
     return DriverManager.getConnection(DB_PATH);
   }
 
   // ----------------------------------------
-  // ④ 投稿一覧取得
+  // 投稿一覧取得
   // ----------------------------------------
   public static java.util.List<Post> getAllPosts() {
     java.util.List<Post> list = new java.util.ArrayList<>();
@@ -102,7 +102,7 @@ public class BbsDBUtil {
   }
 
   // ----------------------------------------
-  // ⑤ 投稿追加
+  // 投稿追加
   // ----------------------------------------
   public static boolean insertPost(String name, String message) {
     String sql = "INSERT INTO posts (name, message) VALUES (?, ?)";
