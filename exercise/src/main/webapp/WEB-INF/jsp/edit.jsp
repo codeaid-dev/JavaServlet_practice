@@ -15,11 +15,11 @@
 <p style="color:red;">${requestScope.error}</p>
 <form method="post" action="${pageContext.request.contextPath}/update">
   <input type="hidden" name="id" value="<%=data.get("id")%>">
-  件名：<input name="name" value="<%=data.get("name")%>" required><br>
-  日付：<input type="date" name="date" value="<%=data.get("date")%>" required><br>
-  時間：<input type="time" name="time" value="<%=data.get("time")%>" required><br>
-  メモ：<input name="note" value="<%=data.get("note")%>"><br>
-  <input type="submit" value="更新">
+  <label>件名：<input name="name" value="<%=data.get("name")%>" required></label><br>
+  <label>日付：<input type="date" name="date" value="<%=data.get("date")%>" required></label><br>
+  <label>時間：<input type="time" name="time" value="<%=data.get("time")%>" required></label><br>
+  <label>メモ：<input name="note" value="<%=data.get("note")%>"></label><br>
+  <p><button type="submit">更新</button></p>
 </form>
 <a href="${pageContext.request.contextPath}/list">戻る</a>
 </body>
