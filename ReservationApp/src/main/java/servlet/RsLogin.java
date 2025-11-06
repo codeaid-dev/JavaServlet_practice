@@ -27,6 +27,7 @@ public class RsLogin extends HttpServlet {
     Map<String, String> user = RsDBUtil.findUser(username, password);
     if (user != null) {
       HttpSession session = request.getSession();
+      session.setMaxInactiveInterval(60);
       session.setAttribute("user", user); // mapに username, role を持つ
       response.sendRedirect(request.getContextPath() + "/list");
     } else {
