@@ -13,7 +13,7 @@ public class AppInitListener implements ServletContextListener {
   public void contextInitialized(ServletContextEvent sce) {
     ServletContext ctx = sce.getServletContext();
     DBUtil.init(ctx); // DB ファイルパス決めてテーブル作成
-    ctx.log("AppInitListener: DBUtil initialized.");
+    ctx.log("[ReservationApp]AppInitListener: DBUtil initialized.");
   }
 
   @Override
