@@ -13,11 +13,11 @@ public class BbsInitListener implements ServletContextListener {
   public void contextInitialized(ServletContextEvent sce) {
     ServletContext context = sce.getServletContext();
     BbsDBUtil.init(context);
-    System.out.println("[AppInitListener] start Web application - start init.");
+    System.out.println("[BbsInitListener] start Web application - start init.");
   }
 
   public void contextDestroyed(ServletContextEvent sce) {
-    System.out.println("[AppInitListener] stop Web application - finish process.");
+    System.out.println("[BbsInitListener] stop Web application - finish process.");
   }
 
 }
