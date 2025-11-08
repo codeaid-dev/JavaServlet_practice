@@ -18,7 +18,7 @@
     <option value="DOING">DOING</option>
     <option value="DONE">DONE</option>
   </select><br>
-  <input type="submit" value="作成">
+  <button type="submit">作成</button>
 </form>
 <a href="<%=request.getContextPath()%>/tasks">戻る</a>
 </body>

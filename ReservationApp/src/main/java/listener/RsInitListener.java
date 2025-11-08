@@ -12,7 +12,6 @@ public class RsInitListener implements ServletContextListener {
 
   public void contextInitialized(ServletContextEvent sce) {
     ServletContext context = sce.getServletContext();
-    context.log("[RsInitListener] contextInitialized - RsDBUtil.init()");
     RsDBUtil.init(context);
   }
 

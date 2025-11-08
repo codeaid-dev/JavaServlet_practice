@@ -11,9 +11,8 @@ import model.DBUtil;
 public class AppInitListener implements ServletContextListener {
   @Override
   public void contextInitialized(ServletContextEvent sce) {
-    ServletContext ctx = sce.getServletContext();
-    DBUtil.init(ctx); // DB ファイルパス決めてテーブル作成
-    ctx.log("[ReservationApp]AppInitListener: DBUtil initialized.");
+    ServletContext context = sce.getServletContext();
+    DBUtil.init(context);
   }
 
   @Override

@@ -18,8 +18,8 @@ public class DBUtil {
   private static String dbUrl;
 
   // call from listener
-  public static void init(ServletContext ctx) {
-    String dbDir = ctx.getRealPath("/WEB-INF/db");
+  public static void init(ServletContext context) {
+    String dbDir = context.getRealPath("/WEB-INF/db");
     File dir = new File(dbDir);
     if (!dir.exists())
       dir.mkdirs();

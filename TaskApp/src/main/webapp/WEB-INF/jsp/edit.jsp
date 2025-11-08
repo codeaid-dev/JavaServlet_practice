@@ -22,7 +22,7 @@
     <option value="DOING" <%= "DOING".equals(task.get("status")) ? "selected":"" %>>DOING</option>
     <option value="DONE" <%= "DONE".equals(task.get("status")) ? "selected":"" %>>DONE</option>
   </select><br>
-  <input type="submit" value="更新">
+  <button type="submit">更新</button>
 </form>
 <a href="<%=request.getContextPath()%>/tasks">戻る</a>
 </body>
