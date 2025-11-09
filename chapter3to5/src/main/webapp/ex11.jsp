@@ -10,10 +10,10 @@ String id = request.getParameter("id");
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習11</title>
+<title>サーブレットとJSP基本</title>
 </head>
 <body>
-  <h2>実習11</h2>
+  <h2>検索</h2>
   <form action="ex11.jsp" method="post">
     <label>ID: <input type="text" name="id"></label>
     <button type="submit">送信</button>

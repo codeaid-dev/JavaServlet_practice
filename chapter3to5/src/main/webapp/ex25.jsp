@@ -9,10 +9,10 @@ String operator = request.getParameter("operator");
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習25</title>
+<title>サーブレットとJSP基本</title>
 </head>
 <body>
-  <h2>実習25</h2>
+  <h2>サーブレットとJSP基本</h2>
   <p>計算式:</p>
   <form action="ex25.jsp" method="post">
     <input type="number" name="left" style="width:55px" value=<%= (strLeft != null) ? strLeft : "" %> required>

@@ -23,7 +23,7 @@ public class Ex21 extends HttpServlet {
         <html>
         <head>
         <meta charset="UTF-8">
-        <title>実習21</title>
+        <title>サーブレットとJSP基本</title>
         <style>
         table,th,td {
           border-collapse: collapse;
@@ -32,7 +32,7 @@ public class Ex21 extends HttpServlet {
         </style>
         </head>
         <body>
-          <h2>実習21</h2>
+          <h2>サーブレットとJSP基本</h2>
             """);
     String[] lines = text.split("\n");
     out.println("<table>");

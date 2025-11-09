@@ -38,10 +38,10 @@ public class Ex7 extends HttpServlet {
         <html>
         <head>
         <meta charset="UTF-8">
-        <title>実習7</title>
+        <title>サーブレットとJSP基本</title>
         </head>
         <body>
-          <h2>実習7</h2>
+          <h2>POST送信 & 受信</h2>
           <p>
         """ + msg + """
           </p>

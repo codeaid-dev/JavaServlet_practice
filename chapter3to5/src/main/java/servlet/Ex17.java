@@ -21,10 +21,10 @@ public class Ex17 extends HttpServlet {
         <html>
         <head>
         <meta charset="UTF-8">
-        <title>実習17</title>
+        <title>サーブレットとJSP基本</title>
         </head>
         <body>
-          <h2>実習17</h2>
+          <h2>パスワード判定</h2>
           <form action="ex17" method="post">
             <label>パスワード:<br>
             <input type="text" name="password"></label><br>
@@ -45,10 +45,10 @@ public class Ex17 extends HttpServlet {
         <html>
         <head>
         <meta charset="UTF-8">
-        <title>実習17</title>
+        <title>サーブレットとJSP基本</title>
         </head>
         <body>
-          <h2>実習17</h2>
+          <h2>パスワード判定</h2>
           <form action="ex17" method="post">
             <label>パスワード:<br>
             <input type="text" name="password"

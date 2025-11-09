@@ -23,11 +23,11 @@ public class Ex24Submit extends HttpServlet {
         <html>
         <head>
         <meta charset="UTF-8">
-        <title>実習24</title>
+        <title>サーブレットとJSP基本</title>
         </head>
         <body>
           """);
-    out.println("<h2>実習24:登録完了</h2>");
+    out.println("<h2>サーブレットとJSP基本:登録完了</h2>");
     out.println("<p>名前: " + name + "</p>");
     out.println("<p>メールアドレス: " + email + "</p>");
     out.println("""

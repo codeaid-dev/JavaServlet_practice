@@ -23,11 +23,11 @@ public class Ex4 extends HttpServlet {
         <html>
         <head>
         <meta charset="UTF-8">
-        <title>実習4</title>
+        <title>サーブレットとJSP基本</title>
         </head>
         <body>
         """);
-    out.println("<h2>実習4</h2>");
+    out.println("<h2>URLの表示</h2>");
     out.println("<p>URL：" + url + "</p>");
     out.println("<p>メソッド：" + method + "</p>");
     out.println("""

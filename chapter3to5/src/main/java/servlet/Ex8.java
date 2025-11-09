@@ -33,10 +33,10 @@ public class Ex8 extends HttpServlet {
         <html>
         <head>
         <meta charset="UTF-8">
-        <title>実習8</title>
+        <title>サーブレットとJSP基本</title>
         </head>
         <body>
-          <h2>実習8</h2>
+          <h2>選択色でテキスト表示</h2>
           """);
     out.println("<p style=\"color:" + color + ";\">" + msg + "</p>");
     out.println("""

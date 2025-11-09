@@ -36,7 +36,7 @@ public class Ex16 extends HttpServlet {
         <html>
         <head>
         <meta charset="UTF-8">
-        <title>実習16</title>
+        <title>サーブレットとJSP基本</title>
         <style>
         td {
           text-align: right;
@@ -45,7 +45,7 @@ public class Ex16 extends HttpServlet {
         </style>
         </head>
         <body>
-          <h2>実習16</h2>
+          <h2>カレンダー</h2>
           """);
     out.println("<p>" + strYear + "年" + strMonth + "月のカレンダー</p>");
     out.println("""

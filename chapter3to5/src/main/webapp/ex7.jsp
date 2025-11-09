@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習7</title>
+<title>サーブレットとJSP基本</title>
 </head>
 <body>
-  <h2>実習7</h2>
+  <h2>POST送信 & 受信</h2>
   <form action="ex7" method="post">
     <label>番号:<br>
     <input type="text" name="id"></label><br>

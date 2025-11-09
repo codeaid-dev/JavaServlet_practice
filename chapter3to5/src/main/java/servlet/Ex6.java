@@ -21,10 +21,10 @@ public class Ex6 extends HttpServlet {
         <html>
         <head>
         <meta charset="UTF-8">
-        <title>実習6</title>
+        <title>サーブレットとJSP基本</title>
         </head>
         <body>
-          <h2>実習6</h2>
+          <h2>GET & POST</h2>
           <form action="ex6" method="post">
             <label>番号:<br>
             <input type="text" name="id"></label><br>
@@ -62,10 +62,10 @@ public class Ex6 extends HttpServlet {
         <html>
         <head>
         <meta charset="UTF-8">
-        <title>実習6</title>
+        <title>サーブレットとJSP基本</title>
         </head>
         <body>
-          <h2>実習6</h2>
+          <h2>GET & POST</h2>
           <p>
         """ + msg + """
           </p>

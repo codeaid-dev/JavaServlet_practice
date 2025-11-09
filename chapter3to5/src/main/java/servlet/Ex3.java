@@ -26,11 +26,11 @@ public class Ex3 extends HttpServlet {
         <html>
         <head>
         <meta charset="UTF-8">
-        <title>実習3</title>
+        <title>サーブレットとJSP基本</title>
         </head>
         <body>
         """);
-    out.println("<h2>実習3</h2>");
+    out.println("<h2>日付(年月日)の表示</h2>");
     out.println("<p>今日の日付(年月日)：" + result + "</p>");
     out.println("""
         </body>

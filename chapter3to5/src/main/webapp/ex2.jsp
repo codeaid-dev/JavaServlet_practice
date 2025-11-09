@@ -8,10 +8,10 @@ msg = msg != null ? msg : "メッセージなし";
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習2</title>
+<title>サーブレットとJSP基本</title>
 </head>
 <body>
-<h2>実習2</h2>
+<h2>GETパラメータ取得</h2>
 <p>メッセージ：<%= msg %>
 </body>
 </html>

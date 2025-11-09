@@ -44,10 +44,10 @@ public class Ex13 extends HttpServlet {
         <html>
         <head>
         <meta charset="UTF-8">
-        <title>実習13</title>
+        <title>サーブレットとJSP基本</title>
         </head>
         <body>
-          <h2>実習13</h2>
+          <h2>期間表示</h2>
           <p>
           """);
     if (error.length() == 0) {

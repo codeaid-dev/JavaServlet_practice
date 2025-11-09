@@ -8,7 +8,7 @@ bg = (bg != null && bg.length() != 0) ? bg : "white";
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習14</title>
+<title>サーブレットとJSP基本</title>
 <style>
   #panel {
     width: 300px;
@@ -19,7 +19,7 @@ bg = (bg != null && bg.length() != 0) ? bg : "white";
 </style>
 </head>
 <body>
-  <h2>実習14</h2>
+  <h2>背景色変更</h2>
   <p>色を選択すると背景色が変わります。</p>
   <form action="ex14.jsp" method="post">
     <div id="panel">

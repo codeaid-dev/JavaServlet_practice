@@ -30,7 +30,7 @@ public class Ex22 extends HttpServlet {
         <html>
         <head>
         <meta charset="UTF-8">
-        <title>実習22</title>
+        <title>サーブレットとJSP基本</title>
         <style>
         div {
             """);
@@ -44,7 +44,7 @@ public class Ex22 extends HttpServlet {
         </style>
         </head>
         <body>
-          <h2>実習22</h2>
+          <h2>サーブレットとJSP基本</h2>
             """);
     out.println("<div>");
     int row = total / line;

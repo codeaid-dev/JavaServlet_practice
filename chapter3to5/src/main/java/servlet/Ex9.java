@@ -30,10 +30,10 @@ public class Ex9 extends HttpServlet {
         <html>
         <head>
         <meta charset="UTF-8">
-        <title>実習9</title>
+        <title>サーブレットとJSP基本</title>
         </head>
         <body>
-          <h2>実習9</h2>
+          <h2>チェック項目の表示</h2>
           """);
     out.println(result);
     out.println("""

@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習8</title>
+<title>サーブレットとJSP基本</title>
 </head>
 <body>
-  <h2>実習8</h2>
+  <h2>選択色でテキスト表示</h2>
   <form action="ex8" method="post">
     <label><input type="radio" name="color" value="red" checked>赤</label>
     <label><input type="radio" name="color" value="green">緑</label>

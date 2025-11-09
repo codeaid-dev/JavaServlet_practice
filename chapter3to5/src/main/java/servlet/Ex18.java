@@ -24,10 +24,10 @@ public class Ex18 extends HttpServlet {
         <html>
         <head>
         <meta charset="UTF-8">
-        <title>実習18</title>
+        <title>サーブレットとJSP基本</title>
         </head>
         <body>
-          <h2>実習18</h2>
+          <h2>メールアドレス判定</h2>
           <form action="ex18" method="post">
             <label>メールアドレス: <br>
             <input type="text" name="mail"

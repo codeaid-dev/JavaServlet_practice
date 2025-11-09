@@ -21,11 +21,11 @@ public class Ex5 extends HttpServlet {
         <html>
         <head>
         <meta charset="UTF-8">
-        <title>実習5</title>
+        <title>サーブレットとJSP基本</title>
         </head>
         <body>
         """);
-    out.println("<h2>実習5</h2>");
+    out.println("<h2>占い</h2>");
     int uranai = (int) (Math.random() * 10);
     if (uranai == 0) {
       out.println("<p>今日は最高！</p>");

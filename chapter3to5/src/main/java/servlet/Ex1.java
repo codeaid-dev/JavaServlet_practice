@@ -23,11 +23,11 @@ public class Ex1 extends HttpServlet {
         <html>
         <head>
         <meta charset="UTF-8">
-        <title>実習1</title>
+        <title>サーブレットとJSP基本</title>
         </head>
         <body>
         """);
-    out.println("<h2>実習1</h2>");
+    out.println("<h2>GETパラメータ取得</h2>");
     out.println("<p>名前：" + name + "</p>");
     out.println("""
         </body>

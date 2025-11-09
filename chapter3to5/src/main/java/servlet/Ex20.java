@@ -28,10 +28,10 @@ public class Ex20 extends HttpServlet {
         <html>
         <head>
         <meta charset="UTF-8">
-        <title>実習20</title>
+        <title>サーブレットとJSP基本</title>
         </head>
         <body>
-          <h2>実習20</h2>
+          <h2>サーブレットとJSP基本</h2>
             """);
     out.println("<p>" + question + "の県庁所在地は「" + answer + "」です。</p>");
     if (seikai) {

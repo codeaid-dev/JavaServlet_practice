@@ -13,10 +13,10 @@ int[] last = {19,18,20,19,20,21,22,22,22,23,22,21};
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習19</title>
+<title>サーブレットとJSP基本</title>
 </head>
 <body>
-  <h2>実習19</h2>
+  <h2>サーブレットとJSP基本</h2>
   <form action="ex19.jsp" method="post">
     <select name="month">
       <% for (int i = 1; i < 13; i++) { %>

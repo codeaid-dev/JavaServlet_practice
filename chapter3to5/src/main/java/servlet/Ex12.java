@@ -41,10 +41,10 @@ public class Ex12 extends HttpServlet {
         <html>
         <head>
         <meta charset="UTF-8">
-        <title>実習12</title>
+        <title>サーブレットとJSP基本</title>
         </head>
         <body>
-          <h2>実習12</h2>
+          <h2>該当表示</h2>
           """);
     out.println(result);
     out.println("""

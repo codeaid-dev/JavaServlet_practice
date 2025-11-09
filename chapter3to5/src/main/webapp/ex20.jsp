@@ -11,10 +11,10 @@ String correct = city[index];
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習20</title>
+<title>サーブレットとJSP基本</title>
 </head>
 <body>
-  <h2>実習20</h2>
+  <h2>サーブレットとJSP基本</h2>
   <p><%= question %>の県庁所在地は？</p>
   <form action="ex20" method="post">
   <label>答え: <input type="text" name="answer"></label><br>

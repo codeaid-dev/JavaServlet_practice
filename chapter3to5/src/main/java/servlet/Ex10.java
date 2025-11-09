@@ -30,10 +30,10 @@ public class Ex10 extends HttpServlet {
         <html>
         <head>
         <meta charset="UTF-8">
-        <title>実習10</title>
+        <title>サーブレットとJSP基本</title>
         </head>
         <body>
-          <h2>実習10</h2>
+          <h2>停車駅</h2>
           """);
     out.println("<p>" + station + "駅には" + type + "の電車が止まります。</p>");
     out.println("""

@@ -45,10 +45,10 @@ public class Ex23 extends HttpServlet {
         <html>
         <head>
         <meta charset="UTF-8">
-        <title>実習23</title>
+        <title>サーブレットとJSP基本</title>
         </head>
         <body>
-          <h2>実習23</h2>
+          <h2>サーブレットとJSP基本</h2>
           """);
     out.println("<p>合計金額: " + total + "円</p>");
     out.println("""

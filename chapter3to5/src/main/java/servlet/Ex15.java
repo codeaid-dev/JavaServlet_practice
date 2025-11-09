@@ -45,10 +45,10 @@ public class Ex15 extends HttpServlet {
         <html>
         <head>
         <meta charset="UTF-8">
-        <title>実習15</title>
+        <title>サーブレットとJSP基本</title>
         </head>
         <body>
-          <h2>実習15</h2>
+          <h2>表示文字数指定</h2>
           <p>
           """);
     if (error.length() != 0) {
