@@ -47,7 +47,7 @@ public class DBUtil {
           title TEXT NOT NULL,
           description TEXT,
           due_date TEXT,
-          status TEXT NOT NULL, -- TODO, DOING, DONE
+          status TEXT NOT NULL,
           created_at TEXT DEFAULT (datetime('now','localtime'))
         );
         """;
