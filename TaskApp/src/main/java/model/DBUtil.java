@@ -15,7 +15,7 @@ import java.util.Map;
 import jakarta.servlet.ServletContext;
 
 public class DBUtil {
-  private static String dbUrl;
+  private static String dbPath;
 
   // call from listener
   public static void init(ServletContext context) {
@@ -24,7 +24,7 @@ public class DBUtil {
     if (!dir.exists())
       dir.mkdirs();
     String path = new File(dir, "tasks.db").getAbsolutePath();
-    dbUrl = "jdbc:sqlite:" + path;
+    dbPath = "jdbc:sqlite:" + path;
 
     try {
       Class.forName("org.sqlite.JDBC");
@@ -35,9 +35,9 @@ public class DBUtil {
   }
 
   private static Connection getConnection() throws SQLException {
-    if (dbUrl == null)
+    if (dbPath == null)
       throw new IllegalStateException("DBUtil not initialized.");
-    return DriverManager.getConnection(dbUrl);
+    return DriverManager.getConnection(dbPath);
   }
 
   private static void createTablesIfNotExist() {

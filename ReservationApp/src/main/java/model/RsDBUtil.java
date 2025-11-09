@@ -16,7 +16,7 @@ import java.util.Map;
 import jakarta.servlet.ServletContext;
 
 public class RsDBUtil {
-  private static String DB_PATH = null;
+  private static String dbPath = null;
 
   static {
     try {
@@ -41,8 +41,8 @@ public class RsDBUtil {
       }
 
       File dbFile = new File(dir, "reservation.db");
-      DB_PATH = "jdbc:sqlite:" + dbFile.getAbsolutePath();
-      System.out.println("[RsDBUtil] DB Path = " + DB_PATH);
+      dbPath = "jdbc:sqlite:" + dbFile.getAbsolutePath();
+      System.out.println("[RsDBUtil] DB Path = " + dbPath);
 
     } catch (Exception e) {
       e.printStackTrace();
@@ -57,7 +57,7 @@ public class RsDBUtil {
   // コネクション取得
   // ----------------------------------------
   public static Connection getConnection() throws SQLException {
-    return DriverManager.getConnection(DB_PATH);
+    return DriverManager.getConnection(dbPath);
   }
 
   // ----------------------------------------
