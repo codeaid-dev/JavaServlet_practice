@@ -25,10 +25,10 @@ public class Ex4Remove extends HttpServlet {
         <html>
         <head>
         <meta charset="UTF-8">
-        <title>実習4</title>
+        <title>セッションスコープ</title>
         </head>
         <body>
-        <h2>実習4</h2>
+        <h2>セッションスコープ</h2>
         """);
     if (cart != null) {
       out.println("""

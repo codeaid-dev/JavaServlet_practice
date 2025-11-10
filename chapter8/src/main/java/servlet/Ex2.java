@@ -27,10 +27,10 @@ public class Ex2 extends HttpServlet {
         <html>
         <head>
         <meta charset="UTF-8">
-        <title>実習2</title>
+        <title>セッションスコープ</title>
         </head>
         <body>
-        <h2>実習2</h2>
+        <h2>セッションスコープ</h2>
         <p>ログイン画面</p>
         <form action="ex2welcome" method="post">
           <label>ユーザー: <input type="text" name="user" required></label><br>

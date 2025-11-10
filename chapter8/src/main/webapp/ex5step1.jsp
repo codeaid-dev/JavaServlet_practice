@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習5</title>
+<title>セッションスコープ</title>
 </head>
 <body>
-  <h2>実習5</h2>
+  <h2>セッションスコープ</h2>
   <p>ステップ1：名前を入力</p>
   <%
   String name = (String)session.getAttribute("name");

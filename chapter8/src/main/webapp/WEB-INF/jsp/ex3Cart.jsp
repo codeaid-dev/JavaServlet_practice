@@ -8,10 +8,10 @@ List<String> cart = (List<String>) session.getAttribute("cart");
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習3</title>
+<title>セッションスコープ</title>
 </head>
 <body>
-  <h2>実習3</h2>
+  <h2>セッションスコープ</h2>
   <p>カートの中身</p>
   <% if (cart != null) { %>
 	  <ul>
@@ -20,6 +20,6 @@ List<String> cart = (List<String>) session.getAttribute("cart");
 	    <% } %>
 	  </ul>
   <% } %>
-  <a href="ex3AddToCart.html">商品を追加</a>
+  <a href="ex3.html">商品を追加</a>
 </body>
 </html>

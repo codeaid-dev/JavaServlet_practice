@@ -5,10 +5,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習2</title>
+<title>セッションスコープ</title>
 </head>
 <body>
-  <h2>実習2</h2>
+  <h2>セッションスコープ</h2>
   <%
 //    HttpSession sessionObj = request.getSession();
 //    String user = (String) sessionObj.getAttribute("user");
