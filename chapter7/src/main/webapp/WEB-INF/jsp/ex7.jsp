@@ -8,14 +8,14 @@ List<Product> productList = (List<Product>)request.getAttribute("products");
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習7</title>
+<title>リクエストスコープ</title>
 <style>
   table { border: 2px solid rgb(140 140 140); }
   th,td { border: 1px solid rgb(160 160 160); }
 </style>
 </head>
 <body>
-  <h2>実習7</h2>
+  <h2>リクエストスコープ</h2>
   <table>
   <tr>
   <th>製品名</th>

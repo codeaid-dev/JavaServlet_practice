@@ -7,10 +7,10 @@ String[] fruits = (String[])request.getAttribute("fruits");
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習2</title>
+<title>リクエストスコープ</title>
 </head>
 <body>
-  <h2>実習2</h2>
+  <h2>リクエストスコープ</h2>
   <ul>
   <% for (String fruit : fruits) { %>
   <li><%= fruit %></li>

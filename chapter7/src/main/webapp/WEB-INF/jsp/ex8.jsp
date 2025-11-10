@@ -8,10 +8,10 @@ String email = (String)request.getAttribute("email");
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習8</title>
+<title>リクエストスコープ</title>
 </head>
 <body>
-  <h2>実習8</h2>
+  <h2>リクエストスコープ</h2>
   <p>メールアドレス: <%= email %></p>
   <p>結果: <%= result %>
 </body>

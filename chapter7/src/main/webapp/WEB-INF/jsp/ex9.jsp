@@ -8,10 +8,10 @@ String error = (String)request.getAttribute("error");
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習9</title>
+<title>リクエストスコープ</title>
 </head>
 <body>
-  <h2>実習9</h2>
+  <h2>リクエストスコープ</h2>
   <p>結果</p>
   <% if (strResult != null) { %>
   <p><%= strResult %></p>

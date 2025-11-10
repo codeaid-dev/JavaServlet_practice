@@ -8,10 +8,10 @@ User user = (User)request.getAttribute("user");
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習6</title>
+<title>リクエストスコープ</title>
 </head>
 <body>
-  <h2>実習6</h2>
+  <h2>リクエストスコープ</h2>
   <p>ユーザー名: <%= user.getName() %></p>
   <p>年齢: <%= user.getAge() %></p>
   <p>メールアドレス: <%= user.getEmail() %></p>

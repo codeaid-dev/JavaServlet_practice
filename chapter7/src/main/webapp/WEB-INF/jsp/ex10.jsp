@@ -14,7 +14,7 @@ String[] week = { "日", "月", "火", "水", "木", "金", "土" };
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習10</title>
+<title>リクエストスコープ</title>
 <style>
 td {
   text-align: right;
@@ -23,7 +23,7 @@ td {
 </style>
 </head>
 <body>
-  <h2>実習10</h2>
+  <h2>リクエストスコープ</h2>
   <p><%= year %>年<%= month %>月のカレンダー</p>
   <table>
   <tr>

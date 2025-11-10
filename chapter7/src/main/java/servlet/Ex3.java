@@ -32,11 +32,11 @@ public class Ex3 extends HttpServlet {
         <html>
         <head>
         <meta charset="UTF-8">
-        <title>実習3</title>
+        <title>リクエストスコープ</title>
         </head>
         <body>
         """);
-    out.println("<h2>実習3</h2>");
+    out.println("<h2>リクエストスコープ</h2>");
     out.println("<p>URLにactionパラメーターを付けて<br>以下のいずれかの値でGETリクエストしてください。</p>");
     out.println("<ul><li>forward</li>");
     out.println("<li>redirect</li></ul>");

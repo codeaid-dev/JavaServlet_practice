@@ -8,10 +8,10 @@ Favorite favorite = (Favorite)request.getAttribute("favorite");
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習11</title>
+<title>リクエストスコープ</title>
 </head>
 <body>
-  <h2>実習11</h2>
+  <h2>リクエストスコープ</h2>
   好きなスポーツ: <br>
   <ul>
   <% for (String s : favorite.getSports()) { %>

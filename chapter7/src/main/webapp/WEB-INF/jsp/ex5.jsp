@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習5</title>
+<title>リクエストスコープ</title>
 </head>
 <body>
-  <h2>実習5</h2>
+  <h2>リクエストスコープ</h2>
   <p>ユーザー名: <%= request.getAttribute("username") %></p>
   <p>年齢: <%= request.getAttribute("age") %></p>
   <p>メールアドレス: <%= request.getAttribute("email") %></p>

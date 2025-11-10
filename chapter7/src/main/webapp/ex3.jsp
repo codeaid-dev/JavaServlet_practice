@@ -7,10 +7,10 @@ String msg = (String)request.getAttribute("message");
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習3</title>
+<title>リクエストスコープ</title>
 </head>
 <body>
-  <h2>実習3</h2>
+  <h2>リクエストスコープ</h2>
   <p><%= msg %></p>
 </body>
 </html>
