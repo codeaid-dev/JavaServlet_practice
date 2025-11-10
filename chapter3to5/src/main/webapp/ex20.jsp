@@ -14,7 +14,7 @@ String correct = city[index];
 <title>サーブレットとJSP基本</title>
 </head>
 <body>
-  <h2>サーブレットとJSP基本</h2>
+  <h2>県庁所在地クイズ</h2>
   <p><%= question %>の県庁所在地は？</p>
   <form action="ex20" method="post">
   <label>答え: <input type="text" name="answer"></label><br>

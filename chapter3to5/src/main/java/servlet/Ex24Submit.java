@@ -27,7 +27,7 @@ public class Ex24Submit extends HttpServlet {
         </head>
         <body>
           """);
-    out.println("<h2>サーブレットとJSP基本:登録完了</h2>");
+    out.println("<h2>登録完了</h2>");
     out.println("<p>名前: " + name + "</p>");
     out.println("<p>メールアドレス: " + email + "</p>");
     out.println("""

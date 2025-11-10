@@ -29,7 +29,7 @@ public class Ex24Confirm extends HttpServlet {
         </head>
         <body>
           """);
-    out.println("<h2>サーブレットとJSP基本:確認画面</h2>");
+    out.println("<h2>確認画面</h2>");
     out.println("<form action='ex24-submit' method='post'>");
     out.println("<p>名前: " + name + "</p>");
     out.println("<input type='hidden' name='name' value='" + name + "'>");

@@ -32,7 +32,7 @@ public class Ex21 extends HttpServlet {
         </style>
         </head>
         <body>
-          <h2>サーブレットとJSP基本</h2>
+          <h2>テーブル表示</h2>
             """);
     String[] lines = text.split("\n");
     out.println("<table>");

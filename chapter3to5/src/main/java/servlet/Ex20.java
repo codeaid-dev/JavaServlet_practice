@@ -31,7 +31,7 @@ public class Ex20 extends HttpServlet {
         <title>サーブレットとJSP基本</title>
         </head>
         <body>
-          <h2>サーブレットとJSP基本</h2>
+          <h2>県庁所在地クイズ</h2>
             """);
     out.println("<p>" + question + "の県庁所在地は「" + answer + "」です。</p>");
     if (seikai) {
