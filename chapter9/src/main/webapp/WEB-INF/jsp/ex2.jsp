@@ -5,10 +5,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習2</title>
+<title>アプリケーションスコープ</title>
 </head>
 <body>
-  <h2>実習2</h2>
+  <h2>アプリケーションスコープ</h2>
   <p>メッセージ</p>
   <ul>
   <% 

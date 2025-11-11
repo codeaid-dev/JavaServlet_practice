@@ -5,10 +5,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習3</title>
+<title>アプリケーションスコープ</title>
 </head>
 <body>
-  <h2>実習3</h2>
+  <h2>アプリケーションスコープ</h2>
   <%
   Map<Integer, Integer> pageViews = (Map<Integer, Integer>) application.getAttribute("pageViews");
   if (pageViews != null) {

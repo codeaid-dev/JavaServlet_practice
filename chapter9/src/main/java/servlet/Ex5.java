@@ -56,18 +56,24 @@ public class Ex5 extends HttpServlet {
       request.getRequestDispatcher("/WEB-INF/jsp/ex5.jsp").forward(request, response);
       return;
     }
+    if (userGuess[0] == userGuess[1] || userGuess[0] == userGuess[2] || userGuess[1] == userGuess[2]) {
+      request.setAttribute("message", "異なる数字を入力してください！");
+      request.getRequestDispatcher("/WEB-INF/jsp/ex5.jsp").forward(request, response);
+      return;
+    }
     request.setAttribute("yourNumbers", "あなたが選んだ数字: " + userGuess[0] + "," + userGuess[1] + "," + userGuess[2]);
     int correct = 0;
     int partial = 0;
-    List<Integer> check = new ArrayList<>(targetNumbers);
+    System.out.println(targetNumbers); // for debug
     for (int i = 0; i < 3; i++) {
-      if (userGuess[i] == check.get(i)) {
+      int c = targetNumbers.get(i);
+      if (userGuess[i] == c) {
         correct++; // 完全一致
-        check.set(i, null);
       }
     }
     for (int i = 0; i < 3; i++) {
-      if (check.contains(userGuess[i])) {
+      int c = targetNumbers.get(i);
+      if ((userGuess[i] != c) && targetNumbers.contains(userGuess[i])) {
         partial++; // 位置違い
       }
     }

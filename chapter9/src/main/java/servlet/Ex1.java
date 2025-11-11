@@ -32,10 +32,10 @@ public class Ex1 extends HttpServlet {
         <html>
         <head>
         <meta charset="UTF-8">
-        <title>実習1</title>
+        <title>アプリケーションスコープ</title>
         </head>
         <body>
-        <h2>実習1</h2>
+        <h2>アプリケーションスコープ</h2>
         """);
     if (!visitors.isEmpty()) {
       out.println("<p>訪問IPアドレス</p>");

@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習5</title>
+<title>アプリケーションスコープ</title>
 </head>
 <body>
-  <h2>実習5</h2>
+  <h2>アプリケーションスコープ</h2>
   <h3>🎲 数当てゲーム 🎲</h3>
   <p>0〜9の異なる3つの数字を当てよう！</p>
   <form action="ex5" method="post">

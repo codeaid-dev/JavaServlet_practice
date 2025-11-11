@@ -5,14 +5,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習4</title>
+<title>アプリケーションスコープ</title>
   <style>
     .slot { font-size: 24px; font-weight: bold; letter-spacing: 10px; }
     .history { font-size: 18px; }
   </style>
 </head>
 <body>
-  <h2>実習4</h2>
+  <h2>アプリケーションスコープ</h2>
   <h3>🎰 文字スロットマシン 🎰</h3>
 
   <form action="ex4" method="post">
