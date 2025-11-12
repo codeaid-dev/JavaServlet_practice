@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習4</title>
+<title>動的インクルード</title>
 </head>
 <body>
-  <h2>実習4</h2>
+  <h2>動的インクルード</h2>
   <h2>【選択したページの内容】</h2>
   <jsp:include page="<%= request.getParameter(\"page\") %>" />
 </body>

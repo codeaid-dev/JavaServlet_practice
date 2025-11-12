@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習6</title>
+<title>動的インクルード</title>
 </head>
 <body>
   <jsp:include page="/WEB-INF/ex6header.html" />
-  <h2>実習6</h2>
+  <h2>動的インクルード</h2>
   <h3>メインコンテンツ</h3>
   <p>ここはメインページの内容です。</p>
   <jsp:include page="/WEB-INF/ex6footer.html" />

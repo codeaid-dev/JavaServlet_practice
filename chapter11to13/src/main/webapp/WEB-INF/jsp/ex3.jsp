@@ -4,10 +4,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習3</title>
+<title>フィルタ・リスナー</title>
 </head>
 <body>
-  <h2>実習3</h2>
+  <h2>フィルタ・リスナー</h2>
   <h3>許可するIPアドレス追加</h3>
   <form action="ex3allowip" method="post">
     <label>IPアドレス: <input type="text" name="ip"></label>

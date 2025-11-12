@@ -27,10 +27,10 @@ public class Ex3Filter extends HttpFilter {
           <html>
           <head>
           <meta charset="UTF-8">
-          <title>実習3</title>
+          <title>フィルタ・リスナー</title>
           </head>
           <body>
-          <h2>実習3</h2>
+          <h2>フィルタ・リスナー</h2>5
           <p>許可IPリストが取得できません。</p>
           </body>
           </html>
@@ -47,10 +47,10 @@ public class Ex3Filter extends HttpFilter {
           <html>
           <head>
           <meta charset="UTF-8">
-          <title>実習3</title>
+          <title>フィルタ・リスナー</title>
           </head>
           <body>
-          <h2>実習3</h2>
+          <h2>フィルタ・リスナー</h2>
           <h3>アクセス拒否</h3>
           """);
       out.println("<p>あなたのIPアドレス（" + clientIP + "）は許可されていません。</p>");

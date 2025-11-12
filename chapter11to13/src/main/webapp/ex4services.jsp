@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習4</title>
+<title>動的インクルード</title>
 </head>
 <body>
   <h3>サービス</h3>

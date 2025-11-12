@@ -1,15 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%-- アクションタグを使ってスコープのJavaBeanを取得する(スコープにあれば取得、なければ作成する) --%>
+<%-- アクションタグを使ってスコープのJavaBeansを取得する --%>
 <%-- <jsp:useBean id="user" class="model.User" scope="request"/> --%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習7</title>
+<title>EL式</title>
 </head>
 <body>
-  <h2>実習7</h2>
+  <h2>EL式</h2>
   <h3>EL式での表示</h3>
   <p>
   名前: ${user.name}<br>

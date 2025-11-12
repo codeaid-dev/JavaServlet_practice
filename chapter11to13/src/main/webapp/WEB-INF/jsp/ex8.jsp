@@ -5,14 +5,14 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>実習8</title>
+<title>EL式・JSTL</title>
 <style>
   table { border: 2px solid rgb(140 140 140); }
   th,td { border: 1px solid rgb(160 160 160); }
 </style>
 </head>
 <body>
-  <h2>実習8</h2>
+  <h2>EL式・JSTL</h2>
   <h3>商品リスト</h3>
   <table>
     <tr><th>商品名</th><th>価格</th><th>コメント</th></tr>

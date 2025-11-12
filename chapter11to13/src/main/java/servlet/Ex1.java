@@ -40,10 +40,10 @@ public class Ex1 extends HttpServlet {
         <html>
         <head>
         <meta charset="UTF-8">
-        <title>実習1</title>
+        <title>init() & destroy()</title>
         </head>
         <body>
-        <h2>実習1</h2>
+        <h2>init() & destroy()</h2>
         """);
     out.println("<p>検索結果: 商品ID " + itemId + " -> " + item + "</p>");
     out.println("""
@@ -64,10 +64,10 @@ public class Ex1 extends HttpServlet {
         <html>
         <head>
         <meta charset="UTF-8">
-        <title>実習1</title>
+        <title>init() & destroy()</title>
         </head>
         <body>
-        <h2>実習1</h2>
+        <h2>init() & destroy()</h2>
         """);
 
     if (itemId == null || itemName == null) {
