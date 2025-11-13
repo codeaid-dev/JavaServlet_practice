@@ -54,7 +54,10 @@ small { color: gray; }
 %>
         <div class="review">
           <strong><%= r.getProduct() %></strong><br>
-          <%= r.getComment() %><br>
+          <% String[] comment = r.getComment().split("\n");
+          for (String str : comment) { %>
+            <%= str %><br>
+          <% } %>
           <small>投稿者：<%= r.getUser() %> / <%= r.getDate() %></small>
         </div>
 <%

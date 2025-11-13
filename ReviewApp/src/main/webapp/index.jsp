@@ -10,10 +10,10 @@ if (user != null) {
 <html>
 <head>
 <meta charset="UTF-8">
-<title>レビューアプリ - ユーザー設定</title>
+<title>商品レビューアプリ - ユーザー設定</title>
 </head>
 <body>
-<h2>レビューアプリ - ユーザー設定</h2>
+<h2>商品レビューアプリ - ユーザー設定</h2>
 <h3>ユーザー名を入力してください</h3>
 
 <form action="user" method="post">
