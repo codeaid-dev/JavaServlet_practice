@@ -48,7 +48,7 @@ small { color: gray; }
 <% if (list.isEmpty()) { %>
   <p>まだレビューはありません。</p>
 <% } else { 
-//    synchronized(list) {
+//    synchronized(list) { // リストへの同時アクセスを制御
       for (int i = list.size() - 1; i >= 0; i--) {
         Review r = list.get(i);
 %>

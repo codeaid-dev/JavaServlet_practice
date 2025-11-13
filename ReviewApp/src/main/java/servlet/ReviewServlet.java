@@ -2,7 +2,6 @@ package servlet;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 import jakarta.servlet.RequestDispatcher;
@@ -49,7 +48,8 @@ public class ReviewServlet extends HttpServlet {
     // レビューリストをアプリケーションスコープから取得
     List<Review> list = (List<Review>) application.getAttribute("reviewList");
     if (list == null) {
-      list = Collections.synchronizedList(new ArrayList<>());
+      //      list = Collections.synchronizedList(new ArrayList<>()); // リストへの同時アクセスを制御
+      list = new ArrayList<>();
       application.setAttribute("reviewList", list);
     }
 
