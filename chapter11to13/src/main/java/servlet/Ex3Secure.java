@@ -21,10 +21,10 @@ public class Ex3Secure extends HttpServlet {
         <html>
         <head>
         <meta charset="UTF-8">
-        <title>フィルタ・リスナー</title>
+        <title>フィルター・リスナー</title>
         </head>
         <body>
-        <h2>フィルタ・リスナー</h2>
+        <h2>フィルター・リスナー</h2>
         <h3 style="color:red;">アクセス成功</h3>
         <p>このページは許可されたIPアドレスからのみアクセスできます。</p>
         </body>
