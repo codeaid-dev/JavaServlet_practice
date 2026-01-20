@@ -77,7 +77,7 @@ public class Ex6 extends HttpServlet {
         long spend = end - (Long) application.getAttribute("start");
         result += "経過時間 : " + spend / 1000 + "秒";
       } else {
-        result = "不正解です";
+        result = "不正解です：正解は" + correct.toString();
       }
       request.setAttribute("result", result);
       request.getRequestDispatcher("/WEB-INF/jsp/ex6.jsp").forward(request, response);
