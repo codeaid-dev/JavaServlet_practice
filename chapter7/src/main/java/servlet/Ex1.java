@@ -20,7 +20,7 @@ public class Ex1 extends HttpServlet {
     age = age != null ? age : "";
     request.setAttribute("username", username);
     request.setAttribute("age", age);
-    RequestDispatcher dispatcher = request.getRequestDispatcher("/ex1.jsp");
+    RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/jsp/ex1.jsp");
     dispatcher.forward(request, response);
   }
 
