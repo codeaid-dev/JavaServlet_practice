@@ -50,8 +50,9 @@ public class FileReadWriteServlet extends HttpServlet {
       String dir = context.getRealPath("/WEB-INF/data");
       saveDir = new File(dir);
     }
-    if (!saveDir.exists()) {
-      saveDir.mkdirs();
+    if (!saveDir.exists() && !saveDir.mkdirs()) {
+      throw new IOException("保存先ディレクトリを作成できません: "
+              + saveDir.getAbsolutePath());
     }
     File outputFile = new File(saveDir, "output.txt");
 
