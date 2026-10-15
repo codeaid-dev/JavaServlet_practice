@@ -11,7 +11,9 @@
   <p>ステップ2：住所を入力</p>
   <%
   String name = request.getParameter("name");
-  name = name != null ? name : "";
+  String sname = (String)session.getAttribute("name");
+  sname = sname != null ? sname : "";
+  name = name != null ? name : sname;
   session.setAttribute("name",name);
   String address = (String)session.getAttribute("address");
   address = address != null ? address : "";
