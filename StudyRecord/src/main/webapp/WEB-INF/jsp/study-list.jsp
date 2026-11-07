@@ -35,7 +35,7 @@
   <td><%= record.getSubject() %></td>
   <td><%= record.getStudyDate() %></td>
   <td><%= record.getMinutes() %>分</td>
-  <td><%= record.getMemo() %></td>
+  <td><%= record.getMemo().replaceAll("\\R","<br>") %></td>
 </tr>
 <% } %>
 
