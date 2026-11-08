@@ -77,46 +77,6 @@ public class StudyRecordDAO {
     }
   }
 
-  // 更新
-  public boolean update(StudyRecord record)
-      throws SQLException {
-
-    String sql = """
-        UPDATE study_records
-        SET subject = ?,
-            study_date = ?,
-            minutes = ?,
-            memo = ?
-        WHERE id = ?
-        """;
-
-    try (Connection con = DBUtil.getConnection();
-        PreparedStatement ps = con.prepareStatement(sql)) {
-
-      ps.setString(1, record.getSubject());
-      ps.setString(2, record.getStudyDate());
-      ps.setInt(3, record.getMinutes());
-      ps.setString(4, record.getMemo());
-      ps.setInt(5, record.getId());
-
-      return ps.executeUpdate() == 1;
-    }
-  }
-
-  // 削除
-  public boolean delete(int id) throws SQLException {
-
-    String sql = "DELETE FROM study_records WHERE id = ?";
-
-    try (Connection con = DBUtil.getConnection();
-        PreparedStatement ps = con.prepareStatement(sql)) {
-
-      ps.setInt(1, id);
-
-      return ps.executeUpdate() == 1;
-    }
-  }
-
   // ResultSetからDTOを生成
   private StudyRecord mapRecord(ResultSet rs)
       throws SQLException {
