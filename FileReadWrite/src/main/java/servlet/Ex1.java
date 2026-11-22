@@ -52,7 +52,7 @@ public class Ex1 extends HttpServlet {
 
     // Webアプリ外の安全なディレクトリに保存する（ユーザーディレクトリ配下）
     String userHome = System.getProperty("user.home");
-    File saveDir = new File(userHome, "Exercise1Data");
+    File saveDir = new File(userHome, "Ex1Data");
     if (!saveDir.exists() && !saveDir.mkdirs()) {
       throw new IOException("保存先ディレクトリを作成できません: "
               + saveDir.getAbsolutePath());
