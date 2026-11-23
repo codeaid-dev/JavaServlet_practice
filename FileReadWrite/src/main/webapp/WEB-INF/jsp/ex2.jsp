@@ -15,9 +15,6 @@
     width: 400px;
     height: 100px;
   }
-  li {
-    margin-bottom: 10px;
-  }
   .error {
     color: red;
   }
