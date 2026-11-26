@@ -10,13 +10,9 @@ import model.DBUtil;
 public class AppInitListener
     implements ServletContextListener {
 
-  @Override
-  public void contextInitialized(
-      ServletContextEvent event) {
-
+  public void contextInitialized(ServletContextEvent event) {
     try {
       DBUtil.init(event.getServletContext());
-
     } catch (Exception e) {
       throw new RuntimeException(
           "データベースの初期化に失敗しました", e);

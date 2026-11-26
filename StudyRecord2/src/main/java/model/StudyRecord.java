@@ -1,6 +1,8 @@
 package model;
 
-public class StudyRecord {
+import java.io.Serializable;
+
+public class StudyRecord implements Serializable {
 
   private int id;
   private String subject;

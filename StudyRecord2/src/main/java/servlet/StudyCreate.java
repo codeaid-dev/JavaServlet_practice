@@ -29,12 +29,10 @@ public class StudyCreate extends HttpServlet {
 
   protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     request.setCharacterEncoding("UTF-8");
-
     String subject = request.getParameter("subject");
     String studyDate = request.getParameter("studyDate");
     String minutesParam = request.getParameter("minutes");
     String memo = request.getParameter("memo");
-
     try {
       int minutes = Integer.parseInt(minutesParam);
       if (subject == null || subject.isBlank()
@@ -45,20 +43,14 @@ public class StudyCreate extends HttpServlet {
             HttpServletResponse.SC_BAD_REQUEST);
         return;
       }
-
       StudyRecord record = new StudyRecord(subject, studyDate, minutes, memo);
-
       dao.insert(record);
-
       response.sendRedirect(
           request.getContextPath() + "/study/list");
-
     } catch (NumberFormatException e) {
       response.sendError(HttpServletResponse.SC_BAD_REQUEST);
-
     } catch (SQLException e) {
       throw new ServletException(e);
     }
   }
-
 }

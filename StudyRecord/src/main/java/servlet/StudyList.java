@@ -24,10 +24,8 @@ public class StudyList extends HttpServlet {
   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     try {
       request.setAttribute("records", dao.findAll());
-
       request.getRequestDispatcher("/WEB-INF/jsp/study-list.jsp")
           .forward(request, response);
-
     } catch (SQLException e) {
       throw new ServletException(e);
     }

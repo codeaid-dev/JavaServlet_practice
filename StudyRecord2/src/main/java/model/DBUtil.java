@@ -39,18 +39,15 @@ public class DBUtil {
 
   public static Connection getConnection()
       throws SQLException {
-
     if (dbUrl == null) {
       throw new SQLException(
           "データベースが初期化されていません");
     }
-
     return DriverManager.getConnection(dbUrl);
   }
 
   private static void createTables()
       throws SQLException {
-
     String sql = """
         CREATE TABLE IF NOT EXISTS study_records (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -61,7 +58,6 @@ public class DBUtil {
             created_at TEXT DEFAULT CURRENT_TIMESTAMP
         )
         """;
-
     try (Connection con = getConnection();
         Statement stmt = con.createStatement()) {
 
