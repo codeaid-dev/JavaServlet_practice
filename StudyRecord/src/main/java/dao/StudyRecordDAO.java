@@ -29,21 +29,6 @@ public class StudyRecordDAO {
     return list;
   }
 
-  // 1件取得
-  public StudyRecord findById(int id) throws SQLException {
-    String sql = "SELECT * FROM study_records WHERE id = ?";
-    try (Connection con = DBUtil.getConnection();
-        PreparedStatement ps = con.prepareStatement(sql)) {
-      ps.setInt(1, id);
-      try (ResultSet rs = ps.executeQuery()) {
-        if (rs.next()) {
-          return mapRecord(rs);
-        }
-      }
-    }
-    return null;
-  }
-
   // 新規登録
   public boolean insert(StudyRecord record)
       throws SQLException {
