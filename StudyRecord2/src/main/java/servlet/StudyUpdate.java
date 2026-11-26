@@ -35,14 +35,10 @@ public class StudyUpdate extends HttpServlet {
       int id = Integer.parseInt(idParam);
       int minutes = Integer.parseInt(minutesParam);
       // 入力チェック
-      if (id <= 0
-          || subject == null
-          || subject.isBlank()
-          || subject.length() > 100
+      if (subject == null || subject.isBlank()
           || studyDate == null
-          || minutes <= 0
-          || minutes > 1440
-          || (memo != null && memo.length() > 1000)) {
+          || studyDate.isBlank()
+          || minutes <= 0) {
         response.sendError(
             HttpServletResponse.SC_BAD_REQUEST);
         return;
